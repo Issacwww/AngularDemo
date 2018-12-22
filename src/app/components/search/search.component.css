@@ -1,0 +1,11 @@
+.search{
+    width: 400px;
+    margin: 100px auto;
+}
+.search ul{
+    padding-left: 0;
+    margin-top: 16px; 
+}
+.clear{
+    float: right;
+}

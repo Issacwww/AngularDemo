@@ -1,0 +1,16 @@
+<div class="search">
+  <div class=" form-inline mt-2 mt-md-0">
+    <input class="form-control col-8 mr-sm-5" type="text" [(ngModel)]="keywords" (keyup) = "doKeySearch($event)">
+    <button class="btn btn-outline-primary" (click)="doClickSearch()">Search</button>
+  </div>
+  <hr>
+  <div class="container">
+    <span>Search History</span> 
+    <button class="btn btn-secondary btn-sm clear" (click)="deleteAll()">Clear All</button>
+    <br>
+    <ul>
+      <li class="btn btn-light btn-sm mr-1" *ngFor="let item of history; let key=index" (dblclick)="deletHistory(key)">{{item}}</li>
+    </ul>
+  </div>
+  
+</div>
